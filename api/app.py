@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from cocomo import OrganicCocomo, SemiDetachedCocomo, EmbeddedCocomo
+from .cocomo import OrganicCocomo, SemiDetachedCocomo, EmbeddedCocomo
 from flask_cors import CORS
 
 
@@ -49,5 +49,5 @@ def estimate():
 
 
 
-if __name__ == '__main__':
-    app.run(debug=False)
+# if __name__ == '__main__':
+#     app.run(debug=False)
