@@ -3,7 +3,7 @@ from cocomo import OrganicCocomo, SemiDetachedCocomo, EmbeddedCocomo
 from flask_cors import CORS
 
 
-app = Flask("COCOMO_API")
+app = Flask(__name__)
 CORS(app)
 
 @app.route('/')
